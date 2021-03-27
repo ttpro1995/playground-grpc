@@ -1,0 +1,13 @@
+service Calculator {
+  rpc add (CalRequest) returns (CalResult) {}
+}
+
+message CalRequest {
+  required int32 a = 1;
+  required int32 b = 2;
+}
+
+// The response message containing the greetings
+message CalResult {
+  required int32 result = 1;
+}
